@@ -1,9 +1,11 @@
-// define interface for Student object
-/* Your code here */
+interface Students {
+  name : string;
+  score : number;
+}
 
-// assign interface/type to the function definition properly
+
 function findTopNames(students) {
-  /* Your code here */
+  return students.filter(student => student.score > 8).map(student => student.name);
 }
 
 // assign interface/type to the student1 object properly
@@ -16,3 +18,8 @@ const students1 = [
 console.log(findTopNames(students1));
 
 module.exports = findTopNames;
+
+
+//รหัส นศ.: 660610795
+
+//ชื่อ-สกุล : ศดานันท์ ลักษณะอารีย์

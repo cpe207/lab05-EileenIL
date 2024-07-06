@@ -10,7 +10,7 @@ interface Shop {
 }
 
 // assign interface/type to the function definition properly
-function buyItem(hero, shop) {
+function buyItem(hero:Hero, shop:Shop) {
   if(hero.gold>=shop.price) {
     hero.items.push(shop.item);
     hero.gold-=shop.price;
